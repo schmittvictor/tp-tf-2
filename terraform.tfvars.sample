@@ -5,7 +5,7 @@ aws_region = "us-east-1"
 aws_access_key = ""
 
 # Clé secrète AWS
-aws_secret_key = "+"
+aws_secret_key = ""
 
 # Token AWS
 aws_token_session = ""
