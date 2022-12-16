@@ -1,6 +1,53 @@
-aws_region = ""
+# Région AWS
+aws_region = "us-east-1"
+
+# Access key AWS
 aws_access_key = ""
-aws_secret_key = ""
+
+# Clé secrète AWS
+aws_secret_key = "+"
+
+# Token AWS
 aws_token_session = ""
-ssh_key_name = ""
+
+# Nom de la paire de clés SSH
+ssh_key_name = "tp-tf_rsa"
+
+# Clé publique de la paire de clés SSH
 public_ssh_key = ""
+
+# Nom du groupe de sécurité
+sg_name = "mysg"
+
+# Protocole pour la règle d'entrée du groupe de sécurité
+sg_ingress_protocol = "TCP"
+
+# Port de début pour la règle d'entrée du groupe de sécurité
+sg_ingress_from_port = 22
+
+# Port de fin pour la règle d'entrée du groupe de sécurité
+sg_ingress_to_port = 22
+
+# Liste des blocs CIDR autorisés à accéder au groupe de sécurité
+sg_ingress_cidr_blocks = ["0.0.0.0/0"]
+
+# Protocole pour la règle de sortie du groupe de sécurité
+sg_egress_protocol = "-1"
+
+# Port de début pour la règle de sortie du groupe de sécurité
+sg_egress_from_port = 0
+
+# Port de fin pour la règle de sortie du groupe de sécurité
+sg_egress_to_port = 0
+
+# Liste des blocs CIDR autorisés à être accessibles depuis le groupe de sécurité
+sg_egress_cidr_blocks = ["0.0.0.0/0"]
+
+# ID de l'AMI pour l'instance EC2
+ec2_ami = "ami-0574da719dca65348"
+
+# Type d'instance pour l'instance EC2
+ec2_instance_type = "t2.medium"
+
+# Nom de l'instance EC2
+ec2_name = "myvm"
